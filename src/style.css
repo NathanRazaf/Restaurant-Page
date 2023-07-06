@@ -1,0 +1,350 @@
+@font-face {
+    font-family: VT323;
+    src: url(./VT323-Regular.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+html, body {
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    font-family: VT323, monospace;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    background: url("./1882557.jpg") repeat center center;
+    color: #fff;
+    transition: opacity 0.3s ease;
+}
+
+.header {
+    padding-bottom: 20px;
+    background-color: rgba(0,0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+}
+
+.options {
+    display: flex;
+    gap: 60px;
+}
+
+.options button {
+    font-family: VT323, monospace;
+    font-size: 2rem;
+    background-color: rgba(0,0, 0, 0.6);
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.options button:hover {
+    transform: translateY(-5px) translateX(-5px);
+    padding: 50px 40px;
+    box-shadow: 10px 10px 0 black;
+    font-size: 3rem;
+}
+
+#menuBtn {
+    background: url('optionsIcons/ztmy-menu-before.jpg') no-repeat center center;
+    color: #4a044e;
+    text-shadow: 2px 2px 0 white;
+    background-size: cover;
+}
+#menuBtn:hover {
+    background: url('optionsIcons/ztmy-menu-after.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#homeBtn {
+    background: url('optionsIcons/ztmy-before-1.jpg') no-repeat center center;
+    background-size: cover;
+    color: black;
+    text-shadow: 2px 2px 0 white;
+}
+
+#homeBtn:hover {
+    background: url('optionsIcons/ztmy-after-1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#aboutBtn {
+    background: url('optionsIcons/ztmy-before.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 0 #4a044e;
+}
+
+#aboutBtn:hover {
+    background: url('optionsIcons/ztmy-after.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.header h1 {
+    animation: swing 4s ease-in-out infinite;
+    font-size: 5rem;
+    padding: 0;
+    margin: 15px;
+    text-shadow: 5px 5px 0 black;
+}
+
+#container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 20px;
+    margin: 50px;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(0,0, 0, 0.6);
+    animation: fadeIn 1.5s;
+}
+
+#homeTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 3px 3px 0 #701a75;
+}
+
+#homeTitle img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+#homeDescription {
+    width: 80%;
+    text-align: center;
+    align-self: center;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #c084fc;
+    border-radius: 10px;
+    animation: balance 2s ease-in-out infinite;
+}
+
+.review p {
+    margin: 5px;
+    text-align: end;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    width: fit-content;
+    transition: all 0.3s ease;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.author h3 {
+    color: #c084fc;
+    text-shadow: 2px 2px 0 black;
+    margin: 0;
+}
+
+.author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 3px 3px 2px black;
+
+}
+
+.author:hover {
+    transform: translateY(-3px);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0,0, 0, 0.6);
+}
+
+.footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    margin: 10px;
+    box-shadow: 3px 3px 2px black;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.footer img:hover {
+    background-color: #a5a5a5;
+}
+
+#menuTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-shadow: 3px 3px 0 #047857;
+
+}
+
+#menuTitle img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+#menuTitle img:hover {
+}
+
+.menuItem {
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #16db93;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    animation: balance 2s ease-in-out infinite;
+}
+
+.menuItem img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 3px 3px 2px black;
+    transition: all 0.3s ease;
+}
+
+.menuItem img:hover {
+    transform: scale(1.1);
+}
+
+.itemTitle {
+    display: flex;
+    justify-content: space-between;
+    color: #047857;
+    text-shadow: black 2px 2px 0;
+}
+
+.itemBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#aboutTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-shadow: 3px 3px 0 #a21caf;
+}
+
+#aboutTitle img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.contactDiv {
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    height: fit-content;
+    transition: all 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.contactDiv p {
+    margin: 0;
+    padding: 0;
+}
+
+.contactDiv img {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+}
+
+.contactDiv:hover {
+    transform: translateY(-5px);
+    border-bottom: 2px solid white;
+}
+
+#map {
+    align-self: center;
+    width: 90%;
+    margin: 30px;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(1deg) scale(1.1);
+    }
+    50% {
+        transform: rotateZ(-1deg) scale(1);
+    }
+    75% {
+        transform: rotateZ(1deg) scale(1.1);
+    }
+    100% {
+        transform: rotateZ(0deg) scale(1);
+    }
+}
+
+@keyframes balance {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
